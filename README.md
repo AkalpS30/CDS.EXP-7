@@ -13,10 +13,10 @@ Array: • An arry is a fixed-size sequential collection of the elemnts of same 
 
 ## Code: 7A
 ```
-//KANWALJEET SINGH
+//AKALP SARKAR
 //ENTC B2
 //EXP 7A
-//23070123124
+//23070123116
 #include<iostream>
 using namespace std; 
 
@@ -39,10 +39,10 @@ int main() {
 ```
 ## Code: 7B 
 ```
-//KANWALJEET SINGH
+//AKALP SARKAR
 //ENTC B2
 //EXP 7B
-//23070123124
+//23070123116
 #include <iostream>
 #define S 4
 using namespace std;
@@ -66,10 +66,10 @@ int main() {
 ```
 ## Code: 7C 
 ```
-//KANWALJEET SINGH
+//AKALP SARKAR
 //ENTC B2
 //EXP 7C
-//23070123124
+//23070123116
 int main() {
     int i,n;
     cout<<"Enter the size of array: ";
@@ -98,10 +98,10 @@ int main() {
 ```
 ## Code: 7D 
 ```
-//KANWALJEET SINGH
+//AKALP SARKAR
 //ENTC B2
 //EXP 7D
-//23070123124
+//23070123116
 
 #include<iostream>
 using namespace std;
