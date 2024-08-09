@@ -37,6 +37,8 @@ int main() {
 }
 }
 ```
+## Output 7a
+![OUTPUT7A](https://github.com/user-attachments/assets/f1a3199c-ed6a-4b74-aeeb-7edabd1742d5)
 ## Code: 7B 
 ```
 //AKALP SARKAR
@@ -64,6 +66,8 @@ int main() {
    return 0;
 }
 ```
+## Output 7b
+![OUTPUT7B](https://github.com/user-attachments/assets/6d6fb5e2-5ba7-4862-b825-5ce5b6d8c36e)
 ## Code: 7C 
 ```
 //AKALP SARKAR
@@ -96,6 +100,8 @@ int main() {
     return 0; 
 }
 ```
+## Output 7c
+![OUTPUT7C](https://github.com/user-attachments/assets/8640fa13-b582-4f5d-8069-bd28f3e7d97b)
 ## Code: 7D 
 ```
 //AKALP SARKAR
@@ -129,5 +135,7 @@ int main() {
     }
 }
 ```
+## Output 7d
+![OUTPUT7D](https://github.com/user-attachments/assets/d474f53b-c374-4126-a79a-d78779d6a442)
 ## Conclusion:
 We learnt the implementation and study of arrays and strings in C++ language.
