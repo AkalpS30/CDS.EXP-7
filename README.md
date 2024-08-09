@@ -9,6 +9,22 @@
 
 ## Theory:
 Array: • An arry is a fixed-size sequential collection of the elemnts of same data type. It consists of continuous memory locations. • The array's indexes begin at 0. Meaning that the first item saved at index 0 is [0]. • The final element of an array with size n is kept at index (n-1).
+Difference between array and string
+- Array
+- Definition: An array is a data structure that can hold multiple values of the same data type, stored at contiguous memory locations.
+- Elements: Each element in an array can be accessed using an index, starting from 0.
+- Data Types: Arrays can store elements of any data type (e.g., integers, floats, objects).
+- Size: The size of an array is fixed upon creation and cannot be changed dynamically.
+- Operations: Common operations include accessing, modifying, and iterating over elements.
+
+- String
+- Definition: A string is a sequence of characters used to represent text.
+- Characters: Each character in a string can be accessed using an index, starting from 0.
+- Data Type: Strings specifically store characters and are often treated as a single data type.
+- Size: The size of a string is determined by the number of characters it contains but can be changed by creating a new string.
+- Operations: Common operations include concatenation, slicing, and searching.
+
+
 
 
 ## Code: 7A
