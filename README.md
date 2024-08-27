@@ -171,6 +171,17 @@ CODE:-
 
     return 0;
     }
+OUTPUT :-
+ 1).<br>
+    ![Screenshot 2024-08-11 at 2 21 16 PM](https://github.com/user-attachments/assets/67412fbb-0e92-41ed-8e0f-e45fd9552b9c)
+ 2).<br>
+    ![Screenshot 2024-08-05 at 11 29 04 PM](https://github.com/user-attachments/assets/980935d0-8e6a-4080-a090-43c62da70dbc)
+ 3).<br>
+    ![Screenshot 2024-08-05 at 11 28 24 PM](https://github.com/user-attachments/assets/5f7852db-8751-4356-b04f-aa2cc3f8b03a)
+
+Conclusion:- <br>
+1).in this experiment we learnt how to print an array ,take user input of array, reverse it , search an element in it and find max ,min ,sum and average of the elements if the array<br>
+2). in this experiment we also learnt to perform the basic operations on strings like:- printing a string, concatenation of string, printing the string in reverse and checking if the string is a palindrome or not<br>
 
 
 Conclusion:- <br>
