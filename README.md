@@ -1,157 +1,178 @@
-# CDS.EXP-7
-# EXP-7
+# CDS-experiment-7
 
-## Aim:
-**To study and implement C++ Arrays and Strings..**
+AIM:- To study and implement strings and arrays <br>
 
-## Software:
-`Microsoft VSCode`
+Software used:- VS code <br>
 
-## Theory:
-Array: • An arry is a fixed-size sequential collection of the elemnts of same data type. It consists of continuous memory locations. • The array's indexes begin at 0. Meaning that the first item saved at index 0 is [0]. • The final element of an array with size n is kept at index (n-1).
-Difference between array and string
-- Array
-- Definition: An array is a data structure that can hold multiple values of the same data type, stored at contiguous memory locations.
-- Elements: Each element in an array can be accessed using an index, starting from 0.
-- Data Types: Arrays can store elements of any data type (e.g., integers, floats, objects).
-- Size: The size of an array is fixed upon creation and cannot be changed dynamically.
-- Operations: Common operations include accessing, modifying, and iterating over elements.
+THEORY:-<br>
+The two basic data structures in C++ for storing elemental sequences are arrays and strings. A group of identically typed elements kept in consecutive memory regions is called an array. Arrays have a fixed size when they are declared, and their index starts at 0. To declare an array of five numbers, for instance, use {int arr[5];`. Although arrays offer quick access to items, dynamic resizing is difficult due to their fixed sizes.
 
-- String
-- Definition: A string is a sequence of characters used to represent text.
-- Characters: Each character in a string can be accessed using an index, starting from 0.
-- Data Type: Strings specifically store characters and are often treated as a single data type.
-- Size: The size of a string is determined by the number of characters it contains but can be changed by creating a new string.
-- Operations: Common operations include concatenation, slicing, and searching.
+Character arrays ({char arr[]}) or the Standard Library's std::string class can be used to manage strings in C++. Character arrays are null-terminated strings in the C style ({'\0'}). char str[] = "Hello", for example, defines a C-string. More functionality and simplicity of use are provided by the `std::string} class, which includes member functions for manipulation, concatenation, and dynamic scaling.Take std::string s = "Hello"; as an example. Today's C++ programmers prefer the std::string class because of its robustness and flexibility.<br>
 
+CODE:-
+1).<br>
 
+    #include<iostream>
+    using namespace std;
 
+    int main() {
+    int array1[5] = {19, 10, 18, 17, 9};
+    int array2[] = {19, 10, 18, 17, 9};
+    int array3[5] = {19, 10, 8};
 
-## Code: 7A
-```
-//AKALP SARKAR
-//ENTC B2
-//EXP 7A
-//23070123116
-#include<iostream>
-using namespace std; 
-
-// Program to print an array. 
-int main() {
-    int i;
-    int a1[5]={19, 20, 5, 6, 7};
-    int a2[5]={5,6,9,0,6};
-    cout<<"Array is: ";
-
-    for(i=0; i<5; ++i) {
-        cout<<"Array is: "<<a1[i]<<" "<<"\n";
+    // Printing array using the traditional method 
+    cout << "\nTraditional method: ";
+    for (int i = 0; i < 5; ++i) {
+        cout << array1[i] << " ";
     }
-    for(i=0; i<5; ++i) {
-        cout<<"Array is: "<<a2[i]<<" "<<"\n";
-    }
-    return 0;
-}
-}
-```
-## Output 7a
-![OUTPUT7A](https://github.com/user-attachments/assets/f1a3199c-ed6a-4b74-aeeb-7edabd1742d5)
-## Code: 7B 
-```
-//AKALP SARKAR
-//ENTC B2
-//EXP 7B
-//23070123116
-#include <iostream>
-#define S 4
-using namespace std;
+    cout << endl;
 
-int main() {
-    int array1[S];
-    //take input from user
-    cout << "Enter " << S << " elements of array: ";
-    for (int index = 0; index < S; index++) {
-        cin >> array1[index];
-    }
-  cout << endl;
-
-    // display entered array ekements
+    // Printing the array with the modern method 
+    cout << "Modern method: ";
     for (int j : array1) {
-        cout << j << "  ";
+        cout << j << " ";
     }
 
-   return 0;
-}
-```
-## Output 7b
-![OUTPUT7B](https://github.com/user-attachments/assets/6d6fb5e2-5ba7-4862-b825-5ce5b6d8c36e)
-## Code: 7C 
-```
-//AKALP SARKAR
-//ENTC B2
-//EXP 7C
-//23070123116
-int main() {
-    int i,n;
-    cout<<"Enter the size of array: ";
-    cin>> n;
-    int a[n]; 
-    //create array
-    for(i=0;i<n;i++)
-    {
-        cout<<"Enter elements "<<i+1<<": ";
-        cin>>a[i];
-    }
-    //display input array
-     cout<<"Array entered by the user is: ";
-    for(i=0;i<n;i++)
-    {
-        cout<<a[i]<<"";
+    return 0;
     }
 
-    //reverse array
-    cout<<"\n Reverse of the entered array is: "; 
-    for (i=n-1; i>=0; i--) {
-        cout<<a[i]<<"";
-    }
-    return 0; 
-}
-```
-## Output 7c
-![OUTPUT7C](https://github.com/user-attachments/assets/8640fa13-b582-4f5d-8069-bd28f3e7d97b)
-## Code: 7D 
-```
-//AKALP SARKAR
-//ENTC B2
-//EXP 7D
-//23070123116
+2).taking input of array from the user,reverse the array,searching the element in the array,finding max and min in the array and finding the sum and avg of the array<br> 
+    
+    #include <iostream>
+    #include <climits>
+    using namespace std;
 
-#include<iostream>
-using namespace std;
+    int main() {
+    int n;
 
-int main() {
-    int marks[5], i, j, num, a=0, count=0;
-    for(i=0;i<5;i++) {
-        cout<<"Enter element-"<<i+1<<": ";
-        cin>>marks[i];
+   
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int array[n];
+
+  
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; ++i) {
+        cin >> array[i];
     }
-    cout<<"Enter element to be searched: ";
-    cin>>num;
-    for(j=0;j<5;j++) {
-        if(marks[j]==num) {
-            cout<<"Position of "<<num<<": "<<j+1<<endl;
-            count++;
-            a=1;
+
+    
+    cout << "\nOriginal array: ";
+    for (int i = 0; i < n; ++i) {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+
+    
+    cout << "Reversed array: ";
+    for (int i = n - 1; i >= 0; --i) {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+
+    
+    int element;
+    cout << "Enter the element to search: ";
+    cin >> element;
+
+    bool found = false;
+    for (int i = 0; i < n; ++i) {
+        if (array[i] == element) {
+            found = true;
+            cout << "Element " << element << " found at index " << i << endl;
+            break;
         }
     }
-    if(a==0) {
-        cout<<"Element not present";
+    if (!found) {
+        cout << "Element " << element << " not found in the array." << endl;
     }
-    else if(a==1) {
-        cout<<"Element is present: "<<count<<" times";
+
+ 
+    int sum = 0;
+    int max = INT_MIN;
+    int min = INT_MAX;
+
+    for (int i = 0; i < n; ++i) {
+        sum += array[i];
+        if (array[i] > max) {
+            max = array[i];
+        }
+        if (array[i] < min) {
+            min = array[i];
+        }
     }
-}
-```
-## Output 7d
-![OUTPUT7D](https://github.com/user-attachments/assets/d474f53b-c374-4126-a79a-d78779d6a442)
-## Conclusion:
-We learnt the implementation and study of arrays and strings in C++ language.
+
+    float average = static_cast<float>(sum) / n;
+
+    cout << "Sum of the array: " << sum << endl;
+    cout << "Average of the array: " << average << endl;
+    cout << "Maximum element in the array: " << max << endl;
+    cout << "Minimum element in the array: " << min << endl;
+
+    return 0;
+    }
+3). take a string and perform the following operation:- print the string, reverse the string,concatenate the string and check if the string is palindrome or not .<br>
+    
+     
+    #include <iostream>
+    #include <string>
+    using namespace std;
+
+    int main()
+    {
+    // Printing a string
+    string inputStr;
+    cout << "Enter a word: ";
+    cin >> inputStr;
+    cout << "Word entered by user is: " << inputStr << endl;
+    cout << endl;
+
+    // Concatenation of a string
+    string firstStr, secondStr;
+    cout << "Enter a word: ";
+    cin >> firstStr;
+    cout << "Enter another word: ";
+    cin >> secondStr;
+    cout << "Concatenated word is: " << firstStr + secondStr << endl;
+    cout << endl;
+
+    // Printing string in reverse
+    string reverseStr;
+    int index = 0;
+    cout << "Enter a word: ";
+    cin >> reverseStr;
+    cout << "Reverse String: ";
+    for (index = reverseStr.length() - 1; index >= 0; index--)
+    {
+        cout << reverseStr[index];
+    }
+    cout << endl;
+    cout << endl;
+
+    // Checking if a string is a palindrome
+    string palindromeStr, reversedPalindrome;
+    int pos = 0;
+    cout << "Enter a word: ";
+    cin >> palindromeStr;
+    for (pos = palindromeStr.length() - 1; pos >= 0; pos--)
+    {
+        reversedPalindrome = reversedPalindrome + palindromeStr[pos];
+    }
+    if (reversedPalindrome == palindromeStr)
+    {
+        cout << "It is a palindrome." << endl;
+    }
+    else
+    {
+        cout << "It is not a palindrome." << endl;
+    }
+    cout << endl;
+
+    return 0;
+    }
+
+
+Conclusion:- <br>
+1).in this experiment we learnt how to print an array ,take user input of array, reverse it , search an element in it and find max ,min ,sum and average of the elements if the array<br>
+2). in this experiment we also learnt to perform the basic operations on strings like:- printing a string, concatenation of string, printing the string in reverse and checking if the string is a palindrome or not<br>
